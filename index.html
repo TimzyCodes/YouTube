@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/63604f5ba6.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <nav class="head-nav-bar">
+      <div class="youtube-header">
+        <div>
+          <i class="fa-solid fa-bars" onclick="handleShowSideBar()"></i>
+
+          <div>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <span>YouTube</span>
+        </div>
+      </div>
+      <div class="header-input">
+        <input type="search" id="search" placeholder="search" />
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="voice-search">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+      </div>
+      <div class="header-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <i class="fa-solid fa-briefcase-medical"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-solid fa-circle-user"></i>
+      </div>
+    </nav>
+    <!-- Side Navbar begins here -->
+    <article class="section1">
+      <div class="firstitems">
+        <div class="items">
+          <span><i class="fa-solid fa-house"></i></span>
+          <li><a href="#">Home</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-video"></i></span>
+          <li><a href="#">Shorts</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-credit-card"></i></span>
+          <li><a href="#">Subscriptions</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-book"></i></span>
+          <li><a href="#">Library</a></li>
+        </div>
+      </div>
+      <ul class="navlinks">
+        <div class="item1">
+          <div class="items">
+            <span><i class="fa-solid fa-house"></i></span>
+            <li><a href="#">Home</a></li>
+          </div>
+          <div class="items">
+            <span><i class="fa-solid fa-video"></i></span>
+            <li><a href="#">Shorts</a></li>
+          </div>
+          <div class="items">
+            <span><i class="fa-solid fa-credit-card"></i></span>
+            <li><a href="#">Subscriptions</a></li>
+          </div>
+        </div>
+
+        <div class="items">
+          <span><i class="fa-solid fa-book"></i></span>
+          <li><a href="#">Library</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-clock-rotate-left"></i></span>
+          <li><a href="#">History</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-play"></i></span>
+          <li><a href="#">Your videos</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-clock"></i></span>
+          <li><a href="#">Watch later</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-thumbs-up"></i></span>
+          <li><a href="#">Liked videos</a></li>
+        </div>
+        <div class="heading-text"><h3>Explore</h3></div>
+        <div class="items">
+          <span><i class="fa-solid fa-thumbs-up"></i></span>
+          <li><a href="#">Trending</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-music"></i></span>
+          <li><a href="#">Music</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-gamepad"></i></span>
+          <li><a href="#">Gaming</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-radio"></i></span>
+          <li><a href="#">News</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-trophy"></i></span>
+          <li><a href="#">Sport</a></li>
+        </div>
+        <div class="heading-text1"><h3>More from YouTube</h3></div>
+        <div class="items">
+          <span> <i class="fa-brands fa-youtube youtube-logo"></i> </span>
+          <li><a href="#">YouTube Premium</a></li>
+        </div>
+        <div class="items">
+          <span
+            ><i
+              class="fa-brands fa-youtube fa-spin fa-spin-reverse youtube-logo"
+            ></i
+          ></span>
+          <li><a href="#">YouTube Studio</a></li>
+        </div>
+        <div class="items">
+          <span
+            ><i class="fa-brands fa-youtube fa-spin-pulse youtube-logo"></i
+          ></span>
+          <li><a href="#">YouTube Music</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-brands fa-youtube fa-beat youtube-logo"></i></span>
+          <li><a href="#">YouTube Kids</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-gear"></i></span>
+          <li><a href="#">Settings</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-flag"></i></span>
+          <li><a href="#">Report history</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-solid fa-circle-question"></i></span>
+          <li><a href="#">Help</a></li>
+        </div>
+        <div class="items">
+          <span><i class="fa-sharp fa-solid fa-circle-exclamation"></i></span>
+          <li><a href="#">Send feedback</a></li>
+        </div>
+      </ul>
+    </article>
+    <article class="section-2">
+      <div class="section-2-sub">
+        <div class="section-2-card-container">
+          <div class="section-2-card">
+            <button>All</button>
+          </div>
+          <div class="section-2-card">
+            <button>Nollywood</button>
+          </div>
+          <div class="section-2-card">
+            <button>Scientific</button>
+          </div>
+          <div class="section-2-card">
+            <button>Gaming</button>
+          </div>
+          <div class="section-2-card">
+            <button>Shorts</button>
+          </div>
+          <div class="section-2-card">
+            <button class="league">Christiano Ronaldo</button>
+          </div>
+          <div class="section-2-card">
+            <button class="league">Champions League</button>
+          </div>
+          <div class="section-2-card">
+            <button class="league">Europa League</button>
+          </div>
+          <div class="section-2-card">
+            <button>League</button>
+          </div>
+          <div class="section-2-card">
+            <button>Afrobeat</button>
+          </div>
+          <div class="section-2-card">
+            <button>Scene</button>
+          </div>
+          <div class="section-2-card">
+            <button>Mixes</button>
+          </div>
+          <div class="section-2-card">
+            <button>Comedy</button>
+          </div>
+          <div class="section-2-card">
+            <button>Live</button>
+          </div>
+          <div class="section-2-card">
+            <button>playlists</button>
+          </div>
+          <div class="section-2-card">
+            <button>HTML</button>
+          </div>
+          <div class="section-2-card">
+            <button class="league">Highlight films</button>
+          </div>
+          <div class="section-2-card">
+            <button>music</button>
+          </div>
+          <div class="section-2-card">
+            <button>News</button>
+          </div>
+          <div class="section-2-card">
+            <button class="league">Freestyle Rep</button>
+          </div>
+          <div class="section-2-card">
+            <button class="league">Recently uploaded</button>
+          </div>
+          <div class="section-2-card">
+            <button>Watched</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="section-3">
+      <div class="section-3-card-container">
+        <div class="section-3-card">
+          <img src="images//maxresdefault (2).jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images/Youtube 2.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-3-card">
+          <img src="images/Youtube 5.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images///iyun.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-3-card">
+          <img
+            src="images//DOWNLOAD-Eni-Olorun-Mo-Latest-Yoruba-Movie-2023-Film.jpg"
+            alt=""
+          />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images//maxresdefault (1).jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images//Youtube 6.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images///maxresdefault.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images/Youtube first image.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images//Sanyeri 1.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images/sanyeri 2.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images//sanyeri 3.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section-3-card">
+          <img src="images//Aduni 5.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images//Aduni 4.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section-3-card">
+          <img src="images//Aduni 3.jpg" alt="" />
+          <div class="section-3-sub-text">
+            <div class="section-3-sub">
+              <img class="elipse" src="images/Ellipse 22.png" alt="" />
+            </div>
+            <h4>
+              I never knew the end of the movie will be a tragedy as i expect a
+              happy ending
+            </h4>
+          </div>
+          <p>NOLLYWOOD MOVIEHOUSE TV</p>
+          <div class="likes-and-views">
+            <div>
+              <p>2.7M views</p>
+            </div>
+            <ul>
+              <li>6 months ago</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <script src="index.js"></script>
+  </body>
+</html>
